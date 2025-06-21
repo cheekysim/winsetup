@@ -4,10 +4,16 @@ An automated PowerShell script to quickly set up a fresh Windows installation wi
 
 ## 🚀 Quick Start
 
-Run this single command in Command Prompt or PowerShell to download and execute the script:
+Run these 2 commands as a user to download and execute the script:
 
+### Powershell
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+```
+
+### Command Prompt
 ```cmd
-powershell -Command "& {Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/cheekysim/winsetup/main/setup.ps1' -OutFile '$env:TEMP\setup.ps1'; & '$env:TEMP\setup.ps1'}" -ExecutionPolicy Bypass
+powershell -Command "& {Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/cheekysim/winsetup/main/setup.ps1' -OutFile \"$env:TEMP\setup.ps1\"; & \"$env:TEMP\setup.ps1\"}" -ExecutionPolicy Bypass
 ```
 
 ## 📦 What Gets Installed
